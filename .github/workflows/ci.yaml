@@ -1,53 +1,95 @@
+name: CI
 
-# name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
-# on:
-#   push:
-#     branches: [ main ]
-#   pull_request:
-#     branches: [ main ]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: mysql://root:password@localhost:3307/earthworm_test 
+      SECRET: sjldk92#sd903mnc./xklsjdf9sdfj 
 
-# jobs:
-#   lint:
+    services:
+      # 定义测试专用的 MySQL 服务
+      mysql:
+        image: mysql:8.3.0
+        env:
+          MYSQL_ROOT_PASSWORD: password
+          MYSQL_DATABASE: earthworm_test
+        ports:
+          - 3307:3306
+        options: >-
+          --health-cmd="mysqladmin ping --silent"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
 
-#     runs-on: ubuntu-latest
 
-#     steps:
-#       - uses: actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v2
 
-#       - name: Use Node.js 16.14.2
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: 16.14.2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20.11.0" 
 
-#       - name: Setup
-#         run: npm i -g @antfu/ni
+      - name: Install pnpm
+        run: npm install -g pnpm
 
-#       - name: Install
-#         run: nci
+      - name: Install dependencies
+        run: pnpm install
 
-#       - name: Lint
-#         run: nr lint
+      - name: Run database initialization command
+        run: pnpm db:init:test:ci
 
-#   build:
+      - name: Run build schema 
+        run: pnpm schema:build
 
-#     runs-on: ubuntu-latest
+      - name: Run tests
+        run: pnpm test:ci
 
-#     steps:
-#       - uses: actions/checkout@v3
+  # lint:
 
-#       - name: Use Node.js 16.14.2
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: 16.14.2
+  #   runs-on: ubuntu-latest
 
-#       - name: Setup
-#         run: npm i -g @antfu/ni
+  #   steps:
+  #     - uses: actions/checkout@v3
 
-#       - name: Install
-#         run: nci
+  #     - name: Use Node.js 16.14.2
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 16.14.2
 
-#       - name: Build
-#         run: nr build
+  #     - name: Setup
+  #       run: npm i -g @antfu/ni
 
-#   # TODO: Add more steps here, like "nr test" as you add the tooling for it
+  #     - name: Install
+  #       run: nci
+
+  #     - name: Lint
+  #       run: nr lint
+
+  # build:
+
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #     - uses: actions/checkout@v3
+
+  #     - name: Use Node.js 16.14.2
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 16.14.2
+
+  #     - name: Setup
+  #       run: npm i -g @antfu/ni
+
+  #     - name: Install
+  #       run: nci
+
+  #     - name: Build
+  #       run: nr build

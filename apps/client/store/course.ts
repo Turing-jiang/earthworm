@@ -1,6 +1,7 @@
+import { computed, ref, watchEffect, watch } from "vue";
 import { defineStore } from "pinia";
-import { ref } from "vue";
-import { fetchCompleteCourse, fetchCourse } from "~/api/course";
+import { fetchCompleteCourse, fetchCourse, fetchTryCourse } from "~/api/course";
+import { useUserStore } from "~/store/user";
 
 interface Statement {
   id: number;
@@ -34,9 +35,9 @@ export const useCourseStore = defineStore("course", () => {
     }
   );
 
-  const wordCount = computed(() => {
-    return currentStatement.value?.english.split(" ").length || 1;
-  });
+  const words = computed(() => {
+    return currentStatement.value?.english.split(" ") || [];
+  })
 
   const totalQuestionsCount = computed(() => {
     return currentCourse.value?.statements.length || 0;
@@ -50,7 +51,8 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   function isAllDone() {
-    return statementIndex.value + 1 === currentCourse.value?.statements.length;
+    // NOTE: 避免出现异常导致 statementIndex 越界无法完成当前课程的情况，只要大于等于当前题目长度就算完成啦
+    return statementIndex.value + 1 >= currentCourse.value?.statements.length;
   }
 
   function doAgain() {
@@ -73,8 +75,17 @@ export const useCourseStore = defineStore("course", () => {
   }
 
   async function setup(courseId: number) {
-    const course = await fetchCourse(courseId);
-    currentCourse.value = course;
+    if (courseId === currentCourse.value?.id) return;
+
+    const userStore = useUserStore();
+    if (!userStore.user) {
+      let course = await fetchTryCourse()
+      currentCourse.value = course
+    } else {
+      let course = await fetchCourse(courseId);
+      currentCourse.value = course;
+    }
+
     statementIndex.value = loadProgress(courseId);
   }
 
@@ -86,7 +97,7 @@ export const useCourseStore = defineStore("course", () => {
     statementIndex,
     currentCourse,
     currentStatement,
-    wordCount,
+    words,
     totalQuestionsCount,
     setup,
     doAgain,
@@ -99,20 +110,21 @@ export const useCourseStore = defineStore("course", () => {
   };
 });
 
+const COURSE_PROGRESS = "courseProgress";
 function useCourseProgress() {
   function saveProgress(courseId: number, index: number) {
-    const progress = JSON.parse(localStorage.getItem("courseProgress")!) || {};
+    const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
     progress[courseId] = index;
-    localStorage.setItem("courseProgress", JSON.stringify(progress));
+    localStorage.setItem(COURSE_PROGRESS, JSON.stringify(progress));
   }
 
   function loadProgress(courseId: number) {
-    const progress = JSON.parse(localStorage.getItem("courseProgress")!) || {};
+    const progress = JSON.parse(localStorage.getItem(COURSE_PROGRESS)!) || {};
     return progress[courseId] || 0;
   }
 
   function cleanProgress() {
-    localStorage.removeItem("courseProgress");
+    localStorage.removeItem(COURSE_PROGRESS);
   }
 
   return {

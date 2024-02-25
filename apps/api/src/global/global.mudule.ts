@@ -1,13 +1,18 @@
 import { Global, Module } from '@nestjs/common';
 import { DB, DbProvider } from './providers/db.provider';
 import { ConfigModule } from '@nestjs/config';
-import * as path from 'node:path';
 
+const envConfig = {
+  prod: '.env.prod',
+  test: '.env.test',
+};
+
+const envFilePath = envConfig[process.env.NODE_ENV] || '.env';
 @Global()
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: path.resolve(__dirname, '../../../../.env'),
+      envFilePath: envFilePath,
       isGlobal: true,
     }),
   ],

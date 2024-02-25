@@ -1,22 +1,31 @@
 import { Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { CourseService } from './course.service';
-import { AuthGuard } from 'src/auth/auth.guard';
-import { User, UserEntity } from 'src/user/user.decorators';
+import { AuthGuard } from '../auth/auth.guard';
+import { User, UserEntity } from '../user/user.decorators';
 
 @Controller('courses')
 export class CourseController {
   constructor(private courseService: CourseService) {}
 
+  @Get('try')
+  tryCourse() {
+    // 专门让游客体验的接口 不需要做 auth 验证
+    return this.courseService.tryCourse();
+  }
+
+  @UseGuards(AuthGuard)
   @Get(':courseId')
   findOne(@Param('courseId') courseId: number) {
     return this.courseService.find(courseId);
   }
 
+  @UseGuards(AuthGuard)
   @Get('')
   findAll() {
     return this.courseService.findAll();
   }
 
+  @UseGuards(AuthGuard)
   @Get(':courseId/next')
   findNext(@Param('courseId') courseId: number) {
     return this.courseService.findNext(courseId);
@@ -28,13 +37,7 @@ export class CourseController {
     @User() user: UserEntity,
     @Param('courseId') courseId: number,
   ) {
-    const result = this.courseService.completeCourse(user, courseId);
+    const result = await this.courseService.completeCourse(user, courseId);
     return result;
-  }
-
-  @UseGuards(AuthGuard)
-  @Post('/start')
-  async startCourse(@User() user: UserEntity) {
-    return await this.courseService.startCourse(user);
   }
 }

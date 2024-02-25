@@ -1,12 +1,22 @@
 import { defineStore } from "pinia";
-
+import { ref } from "vue";
 export interface User {
   userId: string;
   username: string;
   phone: string;
 }
 
+export interface SignupFormValues {
+  phone: string;
+  name: string;
+  password: string;
+}
+
 const LOCAL_STORAGE_KEY = "userInfo";
+export const DEFAULT_SHORTCUT_KEYS = {
+  sound: "Ctrl+'",
+  answer: "Ctrl+;",
+};
 
 export const useUserStore = defineStore("user", () => {
   const user = ref<User>();

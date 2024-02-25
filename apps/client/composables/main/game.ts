@@ -1,5 +1,4 @@
-import { fetchStartGame } from "~/api/game";
-import { useUserStore } from "~/store/user";
+import { ref } from "vue";
 
 export enum GameMode {
   Question = "question",
@@ -24,9 +23,6 @@ export function useGameMode() {
   function isQuestion() {
     return gameMode.value === GameMode.Question;
   }
-  function resetGameMode() {
-    gameMode.value = GameMode.Question;
-  }
 
   return {
     gameMode,
@@ -34,23 +30,5 @@ export function useGameMode() {
     isQuestion,
     showAnswer,
     showQuestion,
-    resetGameMode,
-  };
-}
-
-export async function startGame() {
-  const userStore = useUserStore();
-  const firstCourseId = 1;
-
-  let courseId;
-  if (!userStore.user) {
-    courseId = firstCourseId;
-  } else {
-    const { cId } = await fetchStartGame();
-    courseId = cId;
-  }
-
-  return {
-    courseId,
   };
 }

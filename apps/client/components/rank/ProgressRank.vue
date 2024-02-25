@@ -1,22 +1,22 @@
 <template>
-  <dialog id="rank-progress" class="modal">
+  <dialog class="modal" :open="showModal">
     <div class="modal-box rounded-[8px] flex flex-col w-auto py-4 px-[10px] relative dark:bg-[#1E2329]">
-      <div class="modal-action absolute top-[10px] right-3 mt-0">
-        <form method="dialog">
-          <!-- close svg -->
-          <button class="outline-none w-6 h-6 dark:text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 12L7 7m5 5l5 5m-5-5l5-5m-5 5l-5 5" />
-            </svg>
-          </button>
-        </form>
-
+      <div class="absolute top-[10px] right-3 mt-0">
+        <!-- close svg -->
+        <button class="outline-none w-6 h-6 dark:text-white" @click="hide">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 12L7 7m5 5l5 5m-5-5l5-5m-5 5l-5 5" />
+          </svg>
+        </button>
       </div>
-      <h3 class="font-bold text-[24px] self-stretch text-center dark:text-white">Rank</h3>
-      <div v-if="data.list.length === 0" class="flex flex-col w-[350px] px-4 items-center min-h-52 justify-center">暂无数据
+      <h3 class="font-bold text-[24px] self-stretch text-center dark:text-white">
+        Rank
+      </h3>
+      <div v-if="data.list.length === 0" class="flex flex-col w-[350px] px-4 items-center min-h-52 justify-center">
+        暂无数据
       </div>
-      <div v-else class=" flex flex-col py-3 gap-2">
+      <div v-else class="flex flex-col py-3 gap-2">
         <div v-for="(item, index) in data.list" key="item.username"
           class="flex items-center justify-between w-[350px] px-4 text-[14px] dark:text-white text-black">
           <div class="flex items-center gap-4">
@@ -55,24 +55,33 @@
                 {{ index + 1 }}
               </template>
             </div>
-            <div class="text-black text-[14px] dark:text-white">{{ item.username }}</div>
+            <div class="text-black text-[14px] dark:text-white">
+              {{ item.username }}
+            </div>
           </div>
-          <div class="text-black text-[14px] dark:text-white">{{ item.count }}课</div>
+          <div class="text-black text-[14px] dark:text-white">
+            {{ item.count }}课
+          </div>
         </div>
         <div class="flex items-center justify-between w-[350px] px-4 text-[14px] dark:text-white text-black">
           <div class="flex items-center gap-4">
-            <div class="w-[26px] h-[26px] flex items-center justify-center text-[#f26419]">{{ data.self == null ? 'N' :
-              data.self.rank == null ? 'N' : +data.self.rank + 1 }}</div>
+            <div class="w-[26px] h-[26px] flex items-center justify-center text-[#f26419]">
+              {{
+                data.self == null
+                ? "N"
+                : data.self.rank == null
+                  ? "N"
+                  : +data.self.rank + 1
+              }}
+            </div>
             <div class="text-black text-[14px] dark:text-white">
-              <template v-if="data.self === null">
-                您还未登录
-              </template>
-              <template v-else>
-                您当前排行
-              </template>
+              <template v-if="data.self === null"> 您还未登录 </template>
+              <template v-else> 您当前排行 </template>
             </div>
           </div>
-          <div class="text-black text-[14px] dark:text-white">{{ data.self == null ? 0 : data.self.count }}课</div>
+          <div class="text-black text-[14px] dark:text-white">
+            {{ data.self == null ? 0 : data.self.count }}课
+          </div>
         </div>
       </div>
     </div>
@@ -80,15 +89,18 @@
 </template>
 
 <script setup lang="ts">
-import { fetchProgressRank, type ProgressRankVo } from '~/api/rank';
+import { fetchProgressRank, type ProgressRankVo } from "~/api/rank";
+import { ref, onMounted } from "vue";
+import { useRankModal } from '~/composables/rank/modal'
+const { showModal, hide } = useRankModal()
 
 const data = ref<ProgressRankVo>({
   list: [],
-  self: null
-})
+  self: null,
+});
 
 onMounted(async () => {
-  const res = await fetchProgressRank()
-  data.value = res
-})
+  const res = await fetchProgressRank();
+  data.value = res;
+});
 </script>
