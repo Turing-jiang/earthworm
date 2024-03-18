@@ -97,7 +97,7 @@
 	{
 		"chinese": "我们",
 		"english": "we",
-		"soundmark": "/wi/ /(we，现在时)be are/ /ɚ/"
+		"soundmark": "/wi/"
 	},
 	{
 		"chinese": "我们(现在)正在购物",
@@ -122,7 +122,7 @@
 	{
 		"chinese": "我们现在正在在超市购物",
 		"english": "we are shopping at the supermarket now",
-		"soundmark": "/wi/ /ɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/ /naʊ/ /(we，过去时)be were/ /wɚ/"
+		"soundmark": "/wi/ /ɚ/ /'ʃɑpɪŋ/ /ət/ /ðə/ /'sʊpɚmɑrkɪt/ /naʊ/"
 	},
 	{
 		"chinese": "我们(过去)正在在超市购物",
@@ -132,12 +132,12 @@
 	{
 		"chinese": "打电话",
 		"english": "to call",
-		"soundmark": "/tə/ /kɔl/ /(过去)打电话 called/ /kɔld/"
+		"soundmark": "/tə/ /kɔl/"
 	},
 	{
 		"chinese": "我",
 		"english": "me",
-		"soundmark": "/mi/ /(过去)打电话给我 called me/ /kɔld/ /mi/"
+		"soundmark": "/mi/"
 	},
 	{
 		"chinese": "你(过去)打电话给我",
@@ -187,7 +187,7 @@
 	{
 		"chinese": "我们(过去)正在购物",
 		"english": "we were shopping",
-		"soundmark": "/wi/ /wɚ/ /'ʃɑpɪŋ/ /(we，现在时)be are/ /ɚ/"
+		"soundmark": "/wi/ /wɚ/ /'ʃɑpɪŋ/"
 	},
 	{
 		"chinese": "我们(现在)正在购物",
@@ -302,7 +302,7 @@
 	{
 		"chinese": "我",
 		"english": "I",
-		"soundmark": "/aɪ/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/aɪ/"
 	},
 	{
 		"chinese": "我(现在)正在等待",
@@ -357,7 +357,7 @@
 	{
 		"chinese": "我现在在公交车站正在为了我的朋友等待",
 		"english": "I am waiting for my friend at the bus stop now",
-		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /naʊ/ /(I，过去时)be was/ /wəz/"
+		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /ət/ /ðə/ /bʌs/ /stɑp/ /naʊ/"
 	},
 	{
 		"chinese": "我在公交车站(过去)正在为了我的朋友等待",
@@ -452,7 +452,7 @@
 	{
 		"chinese": "我(过去)正在为了我的朋友等待",
 		"english": "I was waiting for my friend",
-		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/ /(I，现在时)be am/ /æm/"
+		"soundmark": "/aɪ/ /wəz/ /'wetɪŋ/ /fɝ/ /maɪ/ /frɛnd/"
 	},
 	{
 		"chinese": "我(现在)正在为了我的朋友等待",
@@ -645,154 +645,9 @@
 		"soundmark": "/aɪ/ /æm/ /'wetɪŋ/ /fɝ/ /ju/ /tə/ /æsk/ /mi/"
 	},
 	{
-		"chinese": "中文 原形 第三人称单数 过去式想要",
-		"english": "want wants",
-		"soundmark": "/wanted/"
-	},
-	{
-		"chinese": "喜欢",
-		"english": "like likes",
-		"soundmark": "/liked/"
-	},
-	{
-		"chinese": "有；(+to)不得不",
-		"english": "have has",
-		"soundmark": "/had/"
-	},
-	{
-		"chinese": "计划",
-		"english": "plan plans",
-		"soundmark": "/planned/"
-	},
-	{
-		"chinese": "需要",
-		"english": "need needs",
-		"soundmark": "/needed/"
-	},
-	{
-		"chinese": "做",
-		"english": "do does",
-		"soundmark": "/did/"
-	},
-	{
-		"chinese": "告诉",
-		"english": "tell tells",
-		"soundmark": "/told/"
-	},
-	{
-		"chinese": "说话",
-		"english": "talk talks",
-		"soundmark": "/talked/"
-	},
-	{
-		"chinese": "是 be（am）",
-		"english": "is",
-		"soundmark": "/was/"
-	},
-	{
-		"chinese": "是 be（is ）",
-		"english": "is",
-		"soundmark": "/was/"
-	},
-	{
-		"chinese": "是 be（are）",
-		"english": "is",
-		"soundmark": "/were/"
-	},
-	{
-		"chinese": "看到",
-		"english": "see sees",
-		"soundmark": "/saw/"
-	},
-	{
-		"chinese": "吃",
-		"english": "eat eats",
-		"soundmark": "/ate/"
-	},
-	{
-		"chinese": "喝",
-		"english": "drink drinks",
-		"soundmark": "/drank/"
-	},
-	{
-		"chinese": "知道",
-		"english": "know knows",
-		"soundmark": "/knew/"
-	},
-	{
-		"chinese": "忘记",
-		"english": "forget forgets",
-		"soundmark": "/forgot/"
-	},
-	{
-		"chinese": "失去",
-		"english": "lose loses",
-		"soundmark": "/lost/"
-	},
-	{
-		"chinese": "离开",
-		"english": "leave leaves",
-		"soundmark": "/left/"
-	},
-	{
-		"chinese": "睡觉",
-		"english": "sleep sleeps",
-		"soundmark": "/slept/"
-	},
-	{
-		"chinese": "明白",
-		"english": "understand understands",
-		"soundmark": "/understood/"
-	},
-	{
-		"chinese": "买",
-		"english": "buy buys",
-		"soundmark": "/bought/"
-	},
-	{
-		"chinese": "洗",
-		"english": "wash washes",
-		"soundmark": "/washed/"
-	},
-	{
-		"chinese": "打电话",
-		"english": "call calls",
-		"soundmark": "/called/"
-	},
-	{
-		"chinese": "帮助",
-		"english": "help helps",
-		"soundmark": "/helped/"
-	},
-	{
-		"chinese": "相信",
-		"english": "believe believes",
-		"soundmark": "/believed/"
-	},
-	{
-		"chinese": "学习",
-		"english": "study studies",
-		"soundmark": "/studied/"
-	},
-	{
-		"chinese": "解释",
-		"english": "explain explains",
-		"soundmark": "/explained/"
-	},
-	{
-		"chinese": "问",
-		"english": "ask asks",
-		"soundmark": "/asked/"
-	},
-	{
-		"chinese": "飞",
-		"english": "fly flies",
-		"soundmark": "/flew/"
-	},
-	{
 		"chinese": "问题",
 		"english": "that question",
-		"soundmark": "/ðæt/ /'kwɛstʃən/ /(I，过去时)be was/ /wəz/"
+		"soundmark": "/ðæt/ /'kwɛstʃən/"
 	},
 	{
 		"chinese": "我(过去)正在等你问我那个问题",
@@ -808,195 +663,5 @@
 		"chinese": "我将会正在等你问我那个问题",
 		"english": "I will be waiting for you to ask me that question",
 		"soundmark": "/aɪ/ /wɪl/ /bi/ /'wetɪŋ/ /fɝ/ /ju/ /tə/ /æsk/ /mi/ /ðæt/ /'kwɛstʃən/"
-	},
-	{
-		"chinese": "阅读",
-		"english": "read reads",
-		"soundmark": "/read/"
-	},
-	{
-		"chinese": "走路",
-		"english": "walk walks",
-		"soundmark": "/walked/"
-	},
-	{
-		"chinese": "跳舞",
-		"english": "dance dances",
-		"soundmark": "/danced/"
-	},
-	{
-		"chinese": "回答",
-		"english": "answer answers",
-		"soundmark": "/answered/"
-	},
-	{
-		"chinese": "工作",
-		"english": "work works",
-		"soundmark": "/worked/"
-	},
-	{
-		"chinese": "待在",
-		"english": "stay stays",
-		"soundmark": "/stayed/"
-	},
-	{
-		"chinese": "支付",
-		"english": "pay pays",
-		"soundmark": "/paid/"
-	},
-	{
-		"chinese": "旅行",
-		"english": "travel travels",
-		"soundmark": "/traveled/"
-	},
-	{
-		"chinese": "给",
-		"english": "give gives",
-		"soundmark": "/gave/"
-	},
-	{
-		"chinese": "达到",
-		"english": "get gets",
-		"soundmark": "/got/"
-	},
-	{
-		"chinese": "锁",
-		"english": "lock locks",
-		"soundmark": "/locked/"
-	},
-	{
-		"chinese": "记得",
-		"english": "remember remembers",
-		"soundmark": "/Remembered/"
-	},
-	{
-		"chinese": "清理",
-		"english": "clean cleans",
-		"soundmark": "/cleaned/"
-	},
-	{
-		"chinese": "找到",
-		"english": "find finds",
-		"soundmark": "/found/"
-	},
-	{
-		"chinese": "关闭",
-		"english": "close closes",
-		"soundmark": "/closed/"
-	},
-	{
-		"chinese": "教",
-		"english": "teach teaches",
-		"soundmark": "/taught/"
-	},
-	{
-		"chinese": "展示",
-		"english": "show shows",
-		"soundmark": "/showed/"
-	},
-	{
-		"chinese": "让",
-		"english": "let lets",
-		"soundmark": "/let/"
-	},
-	{
-		"chinese": "休息",
-		"english": "rest rests",
-		"soundmark": "/rested/"
-	},
-	{
-		"chinese": "用",
-		"english": "use uses",
-		"soundmark": "/used/"
-	},
-	{
-		"chinese": "做饭",
-		"english": "cook cooks",
-		"soundmark": "/cooked/"
-	},
-	{
-		"chinese": "去",
-		"english": "go goes",
-		"soundmark": "/went/"
-	},
-	{
-		"chinese": "决定",
-		"english": "decide decides",
-		"soundmark": "/decided/"
-	},
-	{
-		"chinese": "驾驶",
-		"english": "drive drives",
-		"soundmark": "/drove/"
-	},
-	{
-		"chinese": "改变",
-		"english": "change changes",
-		"soundmark": "/changed/"
-	},
-	{
-		"chinese": "尝试",
-		"english": "try tries",
-		"soundmark": "/tried/"
-	},
-	{
-		"chinese": "停止",
-		"english": "stop stops",
-		"soundmark": "/Stopped/"
-	},
-	{
-		"chinese": "参加",
-		"english": "join joins",
-		"soundmark": "/joined/"
-	},
-	{
-		"chinese": "邀请",
-		"english": "invite invites",
-		"soundmark": "/invited/"
-	},
-	{
-		"chinese": "拒绝",
-		"english": "refuse refuses",
-		"soundmark": "/refused/"
-	},
-	{
-		"chinese": "接受",
-		"english": "accept accepts",
-		"soundmark": "/accepted/"
-	},
-	{
-		"chinese": "学习",
-		"english": "learn learns",
-		"soundmark": "/learnt/"
-	},
-	{
-		"chinese": "完成",
-		"english": "finish finishes",
-		"soundmark": "/finished/"
-	},
-	{
-		"chinese": "看",
-		"english": "watch watches",
-		"soundmark": "/watched/"
-	},
-	{
-		"chinese": "游泳",
-		"english": "swim swims",
-		"soundmark": "/swam/"
-	},
-	{
-		"chinese": "掌握",
-		"english": "master masters",
-		"soundmark": "/mastered/"
-	},
-	{
-		"chinese": "购物",
-		"english": "shop shops",
-		"soundmark": "/shopped/"
-	},
-	{
-		"chinese": "等待",
-		"english": "wait waits",
-		"soundmark": "/waited/"
 	}
 ]

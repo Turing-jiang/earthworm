@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { GlobalModule } from '../global/global.mudule';
+import { GlobalModule } from '../global/global.module';
 import { UserModule } from '../user/user.module';
 import { AuthModule } from '../auth/auth.module';
 import { CourseModule } from '../course/course.module';
@@ -8,6 +8,9 @@ import { ToolModule } from '../tool/tool.module';
 import { RedisModule } from '@nestjs-modules/ioredis';
 import { RankModule } from '../rank/rank.module';
 import { GameModule } from '../game/game.module';
+import { ScheduleModule } from '@nestjs/schedule';
+import { CronJobModule } from '../cron-job/cron-job.module';
+import { CourseHistoryModule } from '../course-history/course-history.module';
 
 @Module({
   imports: [
@@ -19,6 +22,8 @@ import { GameModule } from '../game/game.module';
     ToolModule,
     RankModule,
     GameModule,
+    CronJobModule,
+    CourseHistoryModule,
     RedisModule.forRootAsync({
       useFactory: () => ({
         type: 'single',
@@ -26,6 +31,7 @@ import { GameModule } from '../game/game.module';
         password: process.env.REDIS_PASSWORD,
       }),
     }),
+    ScheduleModule.forRoot(),
   ],
 })
 export class AppModule {}

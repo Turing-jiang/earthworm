@@ -36,7 +36,7 @@ Cypress.Commands.add(
 
     cy.visit("/auth/login");
 
-    cy.get('input[type="text"]').as("phoneInput").type("13812345678");
+    cy.get('input[type="tel"]').as("phoneInput").type("13812345678");
     cy.get('input[type="password"]')
       .as("passwordInput")
       .type("yourPassword{enter}");
@@ -52,7 +52,7 @@ Cypress.Commands.add(
     cy.url().should("eq", Cypress.config("baseUrl"));
 
     cy.get(".dropdown").click(); // 触发下拉菜单展开
-    cy.contains("User info").should("be.visible"); // 然后检查 "User info" 是否可见
+    cy.contains("User Info").should("be.visible"); // 然后检查 "User Info" 是否可见
   }
 );
 //

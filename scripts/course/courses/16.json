@@ -47,7 +47,7 @@
 	{
 		"chinese": "我",
 		"english": "I",
-		"soundmark": "/aɪ/ /（I，现在时）be am/ /æm/"
+		"soundmark": "/aɪ/"
 	},
 	{
 		"chinese": "我（现在）正在阅读一本英语书",
@@ -67,7 +67,7 @@
 	{
 		"chinese": "我此刻正在阅读一本英语书",
 		"english": "I am reading an English book at the moment",
-		"soundmark": "/aɪ/ /æm/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/ /æt/ /ðə/ /'momənt/ /（I，过去时）be was/ /wəz/"
+		"soundmark": "/aɪ/ /æm/ /ridɪŋ/ /æn/ /ˈɪŋɡlɪʃ/ /bʊk/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "我（过去）正在阅读一本英语书",
@@ -142,7 +142,7 @@
 	{
 		"chinese": "她",
 		"english": "she",
-		"soundmark": "/ʃi/ /（she，现在时）be is/ /ɪz/"
+		"soundmark": "/ʃi/"
 	},
 	{
 		"chinese": "她（现在）正在做她的家庭作业",
@@ -177,7 +177,7 @@
 	{
 		"chinese": "我的女儿此刻正在做她的家庭作业",
 		"english": "my daughter is doing her homework at the moment",
-		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/ /æt/ /ðə/ /'momənt/ /（she，过去时）be was/ /wəz/"
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /ˈduɪŋ/ /hɚ/ /'homwɝk/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "我的女儿（过去）正在做她的家庭作业",
@@ -242,7 +242,7 @@
 	{
 		"chinese": "他",
 		"english": "he",
-		"soundmark": "/hi/ /（he，现在时）be is/ /ɪz/"
+		"soundmark": "/hi/"
 	},
 	{
 		"chinese": "他（现在）正在在街上跑步",
@@ -257,7 +257,7 @@
 	{
 		"chinese": "他此刻正在在街上跑步",
 		"english": "he is running in the street at the moment",
-		"soundmark": "/hi/ /ɪz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/ /æt/ /ðə/ /'momənt/ /（he，过去时）be was/ /wəz/"
+		"soundmark": "/hi/ /ɪz/ /'rʌnɪŋ/ /ɪn/ /ðə/ /strit/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "他（过去）正在在街上跑步",
@@ -307,7 +307,7 @@
 	{
 		"chinese": "她",
 		"english": "she",
-		"soundmark": "/ʃi/ /（she，现在时）be is/ /ɪz/"
+		"soundmark": "/ʃi/"
 	},
 	{
 		"chinese": "她（现在）正在游泳池里游泳",
@@ -322,7 +322,7 @@
 	{
 		"chinese": "她此刻正在游泳池里游泳",
 		"english": "she is swimming in the pool at the moment",
-		"soundmark": "/ʃi/ /ɪz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/ /æt/ /ðə/ /moment/ /'momənt/ /（she，过去时）be was/ /wəz/"
+		"soundmark": "/ʃi/ /ɪz/ /'swɪmɪŋ/ /ɪn/ /ðə/ /pul/ /æt/ /ðə/ /moment/ /'momənt/"
 	},
 	{
 		"chinese": "她（过去）正在游泳池里游泳",
@@ -392,7 +392,7 @@
 	{
 		"chinese": "她",
 		"english": "she",
-		"soundmark": "/ʃi/ /（she，现在时）be is/ /ɪz/"
+		"soundmark": "/ʃi/"
 	},
 	{
 		"chinese": "她（现在）正在做家务",
@@ -427,7 +427,7 @@
 	{
 		"chinese": "我妈此刻正在做家务",
 		"english": "my mother is doing the housework at the moment",
-		"soundmark": "/maɪ/ /'mʌðɚ/ /ɪz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/ /æt/ /ðə/ /'momənt/ /（she，过去时）be was/ /wəz/"
+		"soundmark": "/maɪ/ /'mʌðɚ/ /ɪz/ /ˈduɪŋ/ /ðə/ /'haʊswɝk/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "我妈（过去）正在做家务",
@@ -477,7 +477,7 @@
 	{
 		"chinese": "他",
 		"english": "he",
-		"soundmark": "/hi/ /（he，现在时）be is/ /ɪz/"
+		"soundmark": "/hi/"
 	},
 	{
 		"chinese": "他（现在）正在手机上说话",
@@ -512,7 +512,7 @@
 	{
 		"chinese": "我爸此刻正在手机上说话",
 		"english": "my father is talking on the phone at the moment",
-		"soundmark": "/maɪ/ /'fɑðɚ/ /ɪz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/ /æt/ /ðə/ /'momənt/ /（he，过去时）be was/ /wəz/"
+		"soundmark": "/maɪ/ /'fɑðɚ/ /ɪz/ /'tɔkɪŋ/ /ɑn/ /ðə/ /fon/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "我爸（过去）正在手机上说话",
@@ -572,7 +572,7 @@
 	{
 		"chinese": "她",
 		"english": "she",
-		"soundmark": "/ʃi/ /（she，现在时）be is/ /ɪz/"
+		"soundmark": "/ʃi/"
 	},
 	{
 		"chinese": "她（现在）正在看电视",
@@ -602,7 +602,7 @@
 	{
 		"chinese": "我女儿此刻正在看电视",
 		"english": "my daughter is watching TV at the moment",
-		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /'wɑtʃɪŋ/ /ˈtiˈvi/ /æt/ /ðə/ /'momənt/ /（she，过去时）be was/ /wəz/"
+		"soundmark": "/maɪ/ /'dɔtɚ/ /ɪz/ /'wɑtʃɪŋ/ /ˈtiˈvi/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "我女儿（过去）正在看电视",
@@ -672,7 +672,7 @@
 	{
 		"chinese": "她",
 		"english": "she",
-		"soundmark": "/ʃi/ /（she，现在时）be is/ /ɪz/"
+		"soundmark": "/ʃi/"
 	},
 	{
 		"chinese": "她（现在）正在做牛肉烧土豆",
@@ -707,7 +707,7 @@
 	{
 		"chinese": "她妈妈此刻正在做牛肉烧土豆",
 		"english": "her mother is cooking beef with potatoes at the moment",
-		"soundmark": "/hɚ/ /'mʌðɚ/ /ɪz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/ /æt/ /ðə/ /'momənt/ /（she，过去时）be was/ /wəz/"
+		"soundmark": "/hɚ/ /'mʌðɚ/ /ɪz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/ /æt/ /ðə/ /'momənt/"
 	},
 	{
 		"chinese": "她妈妈（过去）正在做牛肉烧土豆",
@@ -728,330 +728,5 @@
 		"chinese": "我女儿（过去）正在看电视与此同时她妈妈（过去）正在做牛肉烧土豆",
 		"english": "my daughter was watching TV while her mother was cooking beef with potatoes",
 		"soundmark": "/maɪ/ /'dɔtɚ/ /wəz/ /'wɑtʃɪŋ/ /ˈtiˈvi/ /waɪl/ /hɚ/ /'mʌðɚ/ /wəz/ /'kʊkɪŋ/ /bif/ /wɪð/ /pə'tetoz/"
-	},
-	{
-		"chinese": "中文 原形 第三人称单数 过去式想要",
-		"english": "want wants",
-		"soundmark": "/wanted/"
-	},
-	{
-		"chinese": "喜欢",
-		"english": "like likes",
-		"soundmark": "/liked/"
-	},
-	{
-		"chinese": "有；(+to)不得不",
-		"english": "have has",
-		"soundmark": "/had/"
-	},
-	{
-		"chinese": "计划",
-		"english": "plan plans",
-		"soundmark": "/planned/"
-	},
-	{
-		"chinese": "需要",
-		"english": "need needs",
-		"soundmark": "/needed/"
-	},
-	{
-		"chinese": "做",
-		"english": "do does",
-		"soundmark": "/did/"
-	},
-	{
-		"chinese": "告诉",
-		"english": "tell tells",
-		"soundmark": "/told/"
-	},
-	{
-		"chinese": "说话",
-		"english": "talk talks",
-		"soundmark": "/talked/"
-	},
-	{
-		"chinese": "是 be（am）",
-		"english": "is",
-		"soundmark": "/was/"
-	},
-	{
-		"chinese": "是 be（is ）",
-		"english": "is",
-		"soundmark": "/was/"
-	},
-	{
-		"chinese": "是 be（are）",
-		"english": "is",
-		"soundmark": "/were/"
-	},
-	{
-		"chinese": "看到",
-		"english": "see sees",
-		"soundmark": "/saw/"
-	},
-	{
-		"chinese": "吃",
-		"english": "eat eats",
-		"soundmark": "/ate/"
-	},
-	{
-		"chinese": "喝",
-		"english": "drink drinks",
-		"soundmark": "/drank/"
-	},
-	{
-		"chinese": "知道",
-		"english": "know knows",
-		"soundmark": "/knew/"
-	},
-	{
-		"chinese": "忘记",
-		"english": "forget forgets",
-		"soundmark": "/forgot/"
-	},
-	{
-		"chinese": "失去",
-		"english": "lose loses",
-		"soundmark": "/lost/"
-	},
-	{
-		"chinese": "离开",
-		"english": "leave leaves",
-		"soundmark": "/left/"
-	},
-	{
-		"chinese": "睡觉",
-		"english": "sleep sleeps",
-		"soundmark": "/slept/"
-	},
-	{
-		"chinese": "明白",
-		"english": "understand understands",
-		"soundmark": "/understood/"
-	},
-	{
-		"chinese": "买",
-		"english": "buy buys",
-		"soundmark": "/bought/"
-	},
-	{
-		"chinese": "洗",
-		"english": "wash washes",
-		"soundmark": "/washed/"
-	},
-	{
-		"chinese": "打电话",
-		"english": "call calls",
-		"soundmark": "/called/"
-	},
-	{
-		"chinese": "帮助",
-		"english": "help helps",
-		"soundmark": "/helped/"
-	},
-	{
-		"chinese": "相信",
-		"english": "believe believes",
-		"soundmark": "/believed/"
-	},
-	{
-		"chinese": "学习",
-		"english": "study studies",
-		"soundmark": "/studied/"
-	},
-	{
-		"chinese": "解释",
-		"english": "explain explains",
-		"soundmark": "/explained/"
-	},
-	{
-		"chinese": "问",
-		"english": "ask asks",
-		"soundmark": "/asked/"
-	},
-	{
-		"chinese": "飞",
-		"english": "fly flies",
-		"soundmark": "/flew/"
-	},
-	{
-		"chinese": "阅读",
-		"english": "read reads",
-		"soundmark": "/read/"
-	},
-	{
-		"chinese": "走路",
-		"english": "walk walks",
-		"soundmark": "/walked/"
-	},
-	{
-		"chinese": "跳舞",
-		"english": "dance dances",
-		"soundmark": "/danced/"
-	},
-	{
-		"chinese": "回答",
-		"english": "answer answers",
-		"soundmark": "/answered/"
-	},
-	{
-		"chinese": "工作",
-		"english": "work works",
-		"soundmark": "/worked/"
-	},
-	{
-		"chinese": "待在",
-		"english": "stay stays",
-		"soundmark": "/stayed/"
-	},
-	{
-		"chinese": "支付",
-		"english": "pay pays",
-		"soundmark": "/paid/"
-	},
-	{
-		"chinese": "旅行",
-		"english": "travel travels",
-		"soundmark": "/traveled/"
-	},
-	{
-		"chinese": "给",
-		"english": "give gives",
-		"soundmark": "/gave/"
-	},
-	{
-		"chinese": "达到",
-		"english": "get gets",
-		"soundmark": "/got/"
-	},
-	{
-		"chinese": "锁",
-		"english": "lock locks",
-		"soundmark": "/locked/"
-	},
-	{
-		"chinese": "记得",
-		"english": "remember remembers",
-		"soundmark": "/Remembered/"
-	},
-	{
-		"chinese": "清理",
-		"english": "clean cleans",
-		"soundmark": "/cleaned/"
-	},
-	{
-		"chinese": "找到",
-		"english": "find finds",
-		"soundmark": "/found/"
-	},
-	{
-		"chinese": "关闭",
-		"english": "close closes",
-		"soundmark": "/closed/"
-	},
-	{
-		"chinese": "教",
-		"english": "teach teaches",
-		"soundmark": "/taught/"
-	},
-	{
-		"chinese": "展示",
-		"english": "show shows",
-		"soundmark": "/showed/"
-	},
-	{
-		"chinese": "让",
-		"english": "let lets",
-		"soundmark": "/let/"
-	},
-	{
-		"chinese": "休息",
-		"english": "rest rests",
-		"soundmark": "/rested/"
-	},
-	{
-		"chinese": "用",
-		"english": "use uses",
-		"soundmark": "/used/"
-	},
-	{
-		"chinese": "做饭",
-		"english": "cook cooks",
-		"soundmark": "/cooked/"
-	},
-	{
-		"chinese": "去",
-		"english": "go goes",
-		"soundmark": "/went/"
-	},
-	{
-		"chinese": "决定",
-		"english": "decide decides",
-		"soundmark": "/decided/"
-	},
-	{
-		"chinese": "驾驶",
-		"english": "drive drives",
-		"soundmark": "/drove/"
-	},
-	{
-		"chinese": "改变",
-		"english": "change changes",
-		"soundmark": "/changed/"
-	},
-	{
-		"chinese": "尝试",
-		"english": "try tries",
-		"soundmark": "/tried/"
-	},
-	{
-		"chinese": "停止",
-		"english": "stop stops",
-		"soundmark": "/Stopped/"
-	},
-	{
-		"chinese": "参加",
-		"english": "join joins",
-		"soundmark": "/joined/"
-	},
-	{
-		"chinese": "邀请",
-		"english": "invite invites",
-		"soundmark": "/invited/"
-	},
-	{
-		"chinese": "拒绝",
-		"english": "refuse refuses",
-		"soundmark": "/refused/"
-	},
-	{
-		"chinese": "接受",
-		"english": "accept accepts",
-		"soundmark": "/accepted/"
-	},
-	{
-		"chinese": "学习",
-		"english": "learn learns",
-		"soundmark": "/learnt/"
-	},
-	{
-		"chinese": "完成",
-		"english": "finish finishes",
-		"soundmark": "/finished/"
-	},
-	{
-		"chinese": "看",
-		"english": "watch watches",
-		"soundmark": "/watched/"
-	},
-	{
-		"chinese": "游泳",
-		"english": "swim swims",
-		"soundmark": "/swam/"
-	},
-	{
-		"chinese": "掌握",
-		"english": "master masters",
-		"soundmark": "/mastered/"
 	}
 ]

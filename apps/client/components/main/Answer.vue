@@ -3,7 +3,7 @@
     <div class="ml-8 text-5xl text-fuchsia-500 dark:text-gray-50">
       {{ courseStore.currentStatement?.english }}
       <svg
-        class="w-7 h-7 inline-block ml-1 cursor-pointer"
+        class="inline-block ml-1 cursor-pointer w-7 h-7"
         viewBox="0 0 1024 1024"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -19,25 +19,25 @@
       {{ courseStore.currentStatement?.soundmark }}
     </div>
     <button class="btn-item" @click="showQuestion">again</button>
-    <button class="btn-item ml-5" @click="goToNextQuestion">next</button>
+    <button class="ml-5 btn-item" @click="goToNextQuestion">next</button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useCourseStore } from "~/store/course";
-import { registerShortcut, cancelShortcut } from "~/utils/keyboardShortcuts";
-import { useGameMode } from "~/composables/main/game";
-import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
 import { onMounted, onUnmounted } from "vue";
+import { useCurrentStatementEnglishSound } from "~/composables/main/englishSound";
+import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
 import { useAutoSound } from "~/composables/user/sound";
+import { useCourseStore } from "~/store/course";
+import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const courseStore = useCourseStore();
 registerShortcutKeyForNextQuestion();
 const { handlePlaySound } = usePlayEnglishSound();
 const { showSummary } = useSummary();
 const { showQuestion } = useGameMode();
-const { isAutoPlaySound } = useAutoSound()
+const { isAutoPlaySound } = useAutoSound();
 
 function usePlayEnglishSound() {
   const { playSound } = useCurrentStatementEnglishSound();
